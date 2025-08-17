@@ -191,7 +191,8 @@
     "test:write-edit": "tsc --project tsconfig.test.json && node dist-test/test/write-edit-tools.test.js",
     "test:ls-grep-glob": "tsc --project tsconfig.test.json && node dist-test/test/ls-grep-glob-tools.test.js",
     "test:agent": "tsc --project tsconfig.test.json && node dist-test/test/llm-service.test.js && node dist-test/test/core-components.test.js",
-    "test:tools": "tsc --project tsconfig.test.json && node dist-test/test/read-tool.test.js && node dist-test/test/write-edit-tools.test.js && node dist-test/test/ls-grep-glob-tools.test.js"
+    "test:tools": "tsc --project tsconfig.test.json && node dist-test/test/read-tool.test.js && node dist-test/test/write-edit-tools.test.js && node dist-test/test/ls-grep-glob-tools.test.js",
+    "start:web": "ts-node --transpile-only webapp/server.ts"
   },
   "devDependencies": {
     "@types/mime-types": "^3.0.1",
@@ -229,6 +230,7 @@
     "react-zoom-pan-pinch": "^3.7.0",
     "rehype-highlight": "^7.0.2",
     "remark-gfm": "^4.0.1",
-    "zod": "^3.25.67"
+    "zod": "^3.25.67",
+    "express": "^4.19.2"
   }
 }
